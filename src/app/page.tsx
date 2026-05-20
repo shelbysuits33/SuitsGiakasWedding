@@ -1,38 +1,39 @@
 import Link from "next/link";
+import Divider from "./_components/Divider";
 
 export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="min-h-[92vh] flex flex-col items-center justify-center text-center px-6 py-24 relative overflow-hidden">
+      <section className="min-h-[calc(100svh-4.5rem)] flex flex-col items-center justify-center text-center px-6 py-8 relative overflow-hidden">
         {/* Content */}
         <p
-          className="font-body text-xs tracking-widest text-teal uppercase mb-8 relative"
-          style={{ letterSpacing: "0.25em" }}
+          className="font-display text-sm md:text-base tracking-widest text-teal uppercase mb-6 relative max-w-md leading-relaxed"
+          style={{ letterSpacing: "0.2em" }}
         >
-          Friday, September 25, 2026
+          9 • 25 • 2026
         </p>
 
-        <h1 className="font-display text-[14vw] md:text-8xl lg:text-9xl text-espresso font-light leading-none relative">
+        <h1 className="font-script text-[12vw] md:text-7xl lg:text-8xl text-espresso font-normal leading-[1.1] relative">
           <span className="whitespace-nowrap">Shelby Renae</span>
           <br />
-          <span className="italic text-espresso-light">&amp;</span>
+          <span className="text-espresso-light">&amp;</span>
           <br />
           <span className="whitespace-nowrap">Julian Anthony</span>
         </h1>
 
-        <div className="mt-10 flex items-center gap-4 text-teal relative">
-          <span className="block w-12 h-px bg-espresso-light" />
+        <div className="mt-8 flex items-center gap-4 text-teal relative">
+          <span className="block w-12 h-px bg-gold" />
           <p
-            className="font-body text-xs tracking-widest uppercase"
+            className="font-display text-xs md:text-sm tracking-widest uppercase"
             style={{ letterSpacing: "0.2em" }}
           >
             Boston, Massachusetts
           </p>
-          <span className="block w-12 h-px bg-teal" />
+          <span className="block w-12 h-px bg-gold" />
         </div>
 
-        <div className="mt-16 flex flex-col sm:flex-row gap-4 relative">
+        <div className="mt-10 flex flex-col sm:flex-row gap-4 relative">
           <Link
             href="/schedule"
             className="font-body text-xs tracking-widest uppercase px-8 py-3 border border-teal text-teal hover:bg-teal hover:text-cream transition-colors"
@@ -43,9 +44,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="flex justify-center py-6 text-espresso-light">
-      </div>
+      <Divider />
 
       {/* Details strip */}
       <section className="bg-rose border-t border-b border-rose-dark grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-rose-dark">
@@ -92,10 +91,6 @@ export default function Home() {
           <p className="font-body text-sm text-cream-dark">6:00 PM</p>
         </div>
       </section>
-
-      {/* Divider */}
-      <div className="flex justify-center py-6 text-espresso-light">
-      </div>
 
       {/* Mood quote */}
       <section className="py-24 px-6 text-center max-w-2xl mx-auto relative">

@@ -15,11 +15,13 @@
   --color-gold: #c4a44a;
   --color-vine: #3d6b3a;
   --color-sage-cream: #BBBBA0;
+  --color-ink: #3f5560;
 
 
   /* Fonts */
   --font-display: var(--font-cormorant);
   --font-body: var(--font-jost);
+  --font-script: var(--font-pinyon);
 }
 
 html {
@@ -27,18 +29,14 @@ html {
 }
 
 body {
-  background-color: var(--color-cream);
   color: var(--color-espresso);
   font-family: var(--font-body), Georgia, serif;
-}
-
-.ornament::before,
-.ornament::after {
-  content: "";
-  display: inline-block;
-  width: 3rem;
-  height: 1px;
-  /* background-color: currentColor; */
-  vertical-align: middle;
-  margin: 0 0.75rem;
+  /* Faint stained-glass mosaic wash beneath a cream veil for a subtle parchment texture */
+  background-color: var(--color-cream);
+  background-image: linear-gradient(rgba(231, 223, 208, 1),
+      rgba(231, 223, 208, 0.7)),
+    url("/images/mosaic.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }

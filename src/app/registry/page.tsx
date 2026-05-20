@@ -1,4 +1,5 @@
 import PageHeader from "../_components/PageHeader";
+import Divider from "../_components/Divider";
 
 /*
   Add your registry links here.
@@ -60,10 +61,9 @@ export default function RegistryPage() {
           </div>
         )}
 
-        <div className="flex justify-center mt-16 text-espresso-light">
-        </div>
+        <Divider className="mt-12" />
 
-        <div className="mt-8 border-t border-cream-dark pt-12 text-center">
+        <div className="mt-4 pt-8 text-center">
           <p
             className="font-body text-xs tracking-widest text-teal uppercase mb-4"
             style={{ letterSpacing: "0.15em" }}

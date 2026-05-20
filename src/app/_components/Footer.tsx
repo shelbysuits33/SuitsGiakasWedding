@@ -7,7 +7,7 @@ export default function Footer() {
   if (pathname === "/login") return null;
 
   return (
-    <footer className="border-t border-cream-dark py-10 text-center">
+    <footer className="bg-sage-cream border-t border-cream-dark py-10 text-center">
       <p className="font-display text-2xl text-espresso italic">
         Julian & Shelby
       </p>

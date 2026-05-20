@@ -50,10 +50,10 @@ const variantClasses: Record<Variant, { bg: string; title: string; subtitle: str
     divider: "opacity-70",
   },
   rose: {
-    bg: "bg-rose",
-    title: "text-cream",
+    bg: "bg-sage-cream",
+    title: "text-teal",
     subtitle: "text-cream opacity-70",
-    border: "border-rose",
+    border: "border-sage",
     divider: "opacity-65",
   },
 };

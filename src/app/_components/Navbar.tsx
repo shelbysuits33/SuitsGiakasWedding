@@ -20,7 +20,7 @@ export default function Navbar() {
   if (pathname === "/login") return null;
 
   return (
-    <header className="sticky top-0 z-50 bg-cream border-b border-cream-dark">
+    <header className="sticky top-0 z-50 bg-cream border-b border-cream">
       <nav className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link
           href="/"

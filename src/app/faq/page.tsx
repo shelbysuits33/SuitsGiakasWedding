@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import PageHeader from "../_components/PageHeader";
+import Divider from "../_components/Divider";
 
 const faqs = [
   {
@@ -73,9 +74,7 @@ export default function FaqPage() {
       <PageHeader title="FAQ" subtitle="Frequently asked questions" variant="rose" />
 
       <section className="max-w-2xl mx-auto px-6 py-10 relative">
-
-        <div className="flex justify-center mb-12 text-espresso-light">
-        </div>
+        <Divider className="mb-6" />
         {faqs.map((item) => (
           <FaqItem key={item.q} q={item.q} a={item.a} />
         ))}

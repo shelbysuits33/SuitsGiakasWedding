@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Divider from "../_components/Divider";
 import PageHeader from "../_components/PageHeader";
 
 /*
@@ -14,7 +15,11 @@ export default function GalleryPage() {
     <>
       <PageHeader title="Gallery" subtitle="Julian & Shelby" variant="rose" />
 
-      <section className="max-w-5xl mx-auto px-6 py-20">
+      <div className="max-w-5xl mx-auto px-6 pt-10">
+        <Divider className="mb-6" />
+      </div>
+
+      <section className="max-w-5xl mx-auto px-6 pb-20">
         {photos.length === 0 ? (
           <div className="text-center py-24 relative">
             <p className="font-display text-3xl text-espresso font-light italic" style={{ opacity: 0.7 }}>

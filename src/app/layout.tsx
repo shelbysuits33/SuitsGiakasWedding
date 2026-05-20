@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Jost } from "next/font/google";
+import { Cormorant_Garamond, Jost, Pinyon_Script } from "next/font/google";
 import Footer from "./_components/Footer";
 import Navbar from "./_components/Navbar";
 import "./globals.css";
@@ -17,6 +17,12 @@ const jost = Jost({
   weight: ["300", "400", "500"],
 });
 
+const pinyon = Pinyon_Script({
+  variable: "--font-pinyon",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata: Metadata = {
   title: "Julian & Shelby — September 25, 2026",
   description: "We're getting married in Boston. Join us to celebrate.",
@@ -28,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${jost.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${jost.variable} ${pinyon.variable}`}>
       <body className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-1">{children}</main>

@@ -1,4 +1,5 @@
 import PageHeader from "../_components/PageHeader";
+import Divider from "../_components/Divider";
 
 const categories: { label: string; color: string; bgColor: string; items: { name: string; detail: string; description: string }[] }[] = [
   {
@@ -151,11 +152,7 @@ export default function BostonPage() {
 
         {categories.map((cat, i) => (
           <div key={cat.label}>
-            {i > 0 && (
-              <div className="flex justify-center py-4 mb-12 text-espresso-light">
-
-              </div>
-            )}
+            {i > 0 && <Divider className="mb-8" />}
             <div className="mb-20">
               <div className="flex items-center gap-4 mb-10">
                 <span className={`block w-8 h-px ${cat.bgColor}`} />
@@ -190,9 +187,7 @@ export default function BostonPage() {
         ))}
 
         {/* Divider before Getting Around */}
-        <div className="flex justify-center py-4 text-espresso-light">
-
-        </div>
+        <Divider />
       </section>
 
       {/* Getting around */}

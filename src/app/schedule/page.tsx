@@ -1,3 +1,4 @@
+import Divider from "../_components/Divider";
 import PageHeader from "../_components/PageHeader";
 
 const events = [
@@ -166,10 +167,7 @@ export default function SchedulePage() {
         </div>
       </section> */}
 
-      {/* Divider */}
-      <div className="flex justify-center py-4 bg-cream" style={{ backgroundColor: "rgba(127,168,181,0.15)" }}>
-
-      </div>
+      <Divider />
 
       {/* Dress code */}
       <section className="bg-teal text-cream py-16 px-6 text-center">
