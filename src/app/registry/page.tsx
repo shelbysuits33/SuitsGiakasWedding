@@ -1,5 +1,5 @@
-import PageHeader from "../_components/PageHeader";
 import Divider from "../_components/Divider";
+import PageHeader from "../_components/PageHeader";
 
 /*
   Add your registry links here.
@@ -10,6 +10,26 @@ const registries: {
   description: string;
   href: string;
 }[] = [
+    {
+      name: "Williams Sonoma",
+      description: "Kitchen and entertaining",
+      href: "https://www.williams-sonoma.com/registry/qvxtp5twj9/registry-list.html",
+    },
+    {
+      name: "Bloomingdales",
+      description: "Kitchen and entertaining",
+      href: "https://www.bloomingdales.com/registry/Shelby-Suits-Julian-Giakas/1343344",
+    },
+    {
+      name: "Joy",
+      description: "Universal Registry - various retailers",
+      href: "https://withjoy.com/shelby-and-julian-sep-26/registry?utm_medium=web&utm_source=joy&utm_campaign=share_website_dialog",
+    },
+    {
+      name: "Anthropologie",
+      description: "Home",
+      href: "https://www.anthropologie.com/registry/listing?registryId=079B81B7ECA7",
+    },
     // {
     //   name: "Crate & Barrel",
     //   description: "Home goods, kitchen, and entertaining",
@@ -43,18 +63,18 @@ export default function RegistryPage() {
                 href={reg.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block border border-cream-dark hover:border-sage p-8 transition-colors group"
+                className="block border-4 border-sage-cream hover:border-teal p-8 transition-colors group"
               >
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="font-display text-2xl text-espresso group-hover:text-sage transition-colors">
+                    <p className="font-display text-3xl text-sage group-hover:text-teal transition-colors">
                       {reg.name}
                     </p>
                     <p className="font-body text-sm mt-1 text-espresso-light">
                       {reg.description}
                     </p>
                   </div>
-                  <span className="text-sage text-xl">→</span>
+                  <span className="text-sage group-hover:text-teal text-xl">→</span>
                 </div>
               </a>
             ))}
