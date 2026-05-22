@@ -5,7 +5,7 @@ const events = [
   {
     time: "1:30 PM",
     name: "Ceremony",
-    venue: "Lindsay Chapel at Emmanuel Church",
+    venue: "Lindsey Chapel at Emmanuel Church",
     address: "15 Newbury Street, Boston, MA 02116",
     note: "Doors open at 1:00 PM. Please be seated by 1:15 PM.",
   },

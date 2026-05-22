@@ -70,7 +70,7 @@ export default function Home() {
           >
             Ceremony
           </p>
-          <p className="font-display text-2xl text-cream">Lindsay Chapel</p>
+          <p className="font-display text-2xl text-cream">Lindsey Chapel</p>
           <p className="font-body text-sm text-cream-dark mt-1">
             Emmanuel Church, Newbury Street
           </p>
