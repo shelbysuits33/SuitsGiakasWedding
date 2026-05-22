@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Will there be a vegetarian / allergy / halal option?",
-    a: "Yes! You will order your dinner selections from a Prix Fixe menu. The restaurant has assured us that they can cater to any and all dietary restrictions and allergies.",
+    a: "Yes! You will order your dinner selections from a prix fixe menu. The restaurant has assured us that they can cater to any and all dietary restrictions and allergies.",
   },
   {
     q: "I have another question — who do I contact?",
