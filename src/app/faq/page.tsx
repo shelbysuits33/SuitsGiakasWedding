@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import PageHeader from "../_components/PageHeader";
 import Divider from "../_components/Divider";
+import PageHeader from "../_components/PageHeader";
 
 const faqs = [
   {
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Will the ceremony and reception be indoors?",
-    a: "Yes — the ceremony is inside Lindsay Chapel at Emmanuel Church, and the reception is inside Mamma Maria. September in Boston can be beautiful but unpredictable, so you won't need to worry about weather.",
+    a: "Yes — the ceremony is inside Lindsey Chapel at Emmanuel Church, and the reception is inside Mamma Maria. September in Boston can be beautiful but unpredictable, so you won't need to worry about weather.",
   },
   {
     q: "What time should I arrive for the ceremony?",
