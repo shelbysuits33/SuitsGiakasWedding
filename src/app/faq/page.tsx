@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import PageHeader from "../_components/PageHeader";
 import Divider from "../_components/Divider";
+import PageHeader from "../_components/PageHeader";
 
 const faqs = [
   {
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "Will there be a vegetarian / allergy / halal option?",
-    a: "Yes! You will order your dinner selections from a Prix Fixe menu. The restaurant has assured us that they can cater to any and all dietary restrictions and allergies.",
+    a: "Yes! You will order your dinner selections from a prix fixe menu. The restaurant has assured us that they can cater to any and all dietary restrictions and allergies.",
   },
   {
     q: "I have another question — who do I contact?",
