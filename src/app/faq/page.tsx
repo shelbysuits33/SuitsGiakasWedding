@@ -7,7 +7,7 @@ import PageHeader from "../_components/PageHeader";
 const faqs = [
   {
     q: "Can I take photos during the ceremony?",
-    a: "No no no no no. Because of the small guest list, our photographer has communicated to us that guests using phones during the ceremony will be VERY VISIBLE in our wedding photos. We are having an unplugged ceremony — please keep phones and cameras away during the service so everyone can be fully present. Our photographer will capture everything beautifully. You are of course welcome to take photos at the cocktail hour and reception.",
+    a: "We kindly request that no phones are out during the ceremony. Because of the small guest list, our photographer has communicated to us that guests using phones during the ceremony will be VERY VISIBLE in our wedding photos. We are having an unplugged ceremony — please keep phones and cameras away during the service so everyone can be fully present. Our photographer will capture everything beautifully. You are of course welcome to take photos at the cocktail hour and reception.",
   },
   {
     q: "Can I post photos of the wedding?",
