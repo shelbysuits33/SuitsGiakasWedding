@@ -33,7 +33,7 @@ export const parties: Party[] = [
   {
     id: "suits-ensley-family",
     partyName: "The Ensley Family",
-    guests: ["Thomas Ensley", "Kyla Suits-Ensley"],
+    guests: ["Kyla Ensley", "Thomas Ensley"],
   },
   {
     id: "giakas-family",
