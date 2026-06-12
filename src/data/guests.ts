@@ -28,12 +28,12 @@ export const parties: Party[] = [
   {
     id: "suits-munroe-family",
     partyName: "The Suits Family",
-    guests: ["Eric Suits", "Alycia Munroe Suits", "Elliott Suits"],
+    guests: ["Eric Suits", "Alycia Munroe-Suits", "Elliott Suits"],
   },
   {
     id: "suits-ensley-family",
     partyName: "The Ensley Family",
-    guests: ["Thomas Ensley", "Kyla Suits Ensley"],
+    guests: ["Thomas Ensley", "Kyla Suits-Ensley"],
   },
   {
     id: "giakas-family",
@@ -48,7 +48,7 @@ export const parties: Party[] = [
   {
     id: "ayesh-family",
     partyName: "The Ayesh Family",
-    guests: ["Sophia Giakas Ayesh", "Yusef Ayesh", "Eleni Ayesh", "Nadir Ayesh", "Ilyas Ayesh"],
+    guests: ["Sophia Giakas Ayesh", "Yusouf Ayesh", "Eleni Ayesh", "Nadir Ayesh", "Ilyas Ayesh"],
   },
   {
     id: "giakas-sebastian-family",
