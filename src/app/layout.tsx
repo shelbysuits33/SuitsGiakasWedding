@@ -24,7 +24,7 @@ const pinyon = Pinyon_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Julian & Shelby — September 25, 2026",
+  title: "J & S — September 25, 2026",
   description: "We're getting married in Boston. Join us to celebrate.",
 };
 
