@@ -7,6 +7,7 @@ import { useState } from "react";
 const links = [
   { href: "/", label: "Home" },
   { href: "/schedule", label: "Schedule" },
+  { href: "/rsvp", label: "RSVP" },
   { href: "/gallery", label: "Gallery" },
   { href: "/boston", label: "Boston" },
   { href: "/registry", label: "Registry" },
@@ -17,7 +18,7 @@ export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  if (pathname === "/login") return null;
+  if (pathname === "/login" || pathname.startsWith("/admin")) return null;
 
   return (
     <header className="sticky top-0 z-50 bg-cream border-b border-cream">
