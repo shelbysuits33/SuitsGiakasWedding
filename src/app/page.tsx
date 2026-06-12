@@ -35,11 +35,11 @@ export default function Home() {
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 relative">
           <Link
-            href="/schedule"
+            href="/rsvp"
             className="font-body text-xs tracking-widest uppercase px-8 py-3 border border-teal text-teal hover:bg-teal hover:text-cream transition-colors"
             style={{ letterSpacing: "0.15em" }}
           >
-            View Schedule
+            Répondez s'il vous plaît
           </Link>
         </div>
       </section>

@@ -7,11 +7,11 @@ import PageHeader from "../_components/PageHeader";
 const faqs = [
   {
     q: "Can I take photos during the ceremony?",
-    a: "No no no no no. Because of the small guest list, our photographer has communicated to us that guests using phones during the ceremony will be VERY VISIBLE in our wedding photos. We are having an unplugged ceremony — please keep phones and cameras away during the service so everyone can be fully present. Our photographer will capture everything beautifully. You are of course welcome to take photos at the cocktail hour and reception.",
+    a: "We kindly request that no phones are out during the ceremony. Because of the small guest list, our photographer has communicated to us that guests using phones during the ceremony will be VERY VISIBLE in our wedding photos. We are having an unplugged ceremony — please keep phones and cameras away during the service so everyone can be fully present. Our photographer will capture everything beautifully. You are of course welcome to take photos at the cocktail hour and reception.",
   },
   {
     q: "Can I post photos of the wedding?",
-    a: "We kindly request that you refrain from posting photos of the bride and groom until after we have had a chance to send our wedding announcements. We would like to be the first to announce our marriage to our friends and family who are not in attendance.",
+    a: "Please refrain from posting photos of the bride and groom until after we have had a chance to send our wedding announcements. We would like to be the first to announce our marriage to our friends and family who are not in attendance.",
   },
   {
     q: "Is there parking near the ceremony?",
@@ -23,18 +23,18 @@ const faqs = [
   },
   {
     q: "What is the dress code?",
-    a: "Cocktail Attire",
+    a: "Cocktail Attire. For ladies, we suggest knee-length to midi dresses or dressy separates. For gentlemen, a suit and tie or blazer with dress trousers and dress shoes.",
   },
   {
     q: "Will the ceremony and reception be indoors?",
-    a: "Yes — the ceremony is inside Lindsey Chapel at Emmanuel Church, and the reception is inside Mamma Maria. September in Boston can be beautiful but unpredictable, so you won't need to worry about weather.",
+    a: "Yes — the ceremony is inside Lindsey Chapel at Emmanuel Church, and the reception is inside Mamma Maria. Please note that family photos will be taken in an outdoor, grassy area.",
   },
   {
     q: "What time should I arrive for the ceremony?",
     a: "Doors open at 1:00 PM. Please be seated by 1:15 PM. The ceremony will begin promptly at 1:30 PM.",
   },
   {
-    q: "Will there be a vegetarian / allergy / halal option?",
+    q: "Will there be a vegetarian / allergy-friendly option?",
     a: "Yes! You will order your dinner selections from a prix fixe menu. The restaurant has assured us that they can cater to any and all dietary restrictions and allergies.",
   },
   {

@@ -25,24 +25,6 @@ const events = [
   },
 ];
 
-const accommodations = [
-  {
-    name: "The Newbury Boston",
-    distance: "Steps from the ceremony",
-    address: "1 Newbury Street, Boston, MA 02116",
-  },
-  {
-    name: "The Lenox Hotel",
-    distance: "0.1 mi from the ceremony",
-    address: "61 Exeter Street, Boston, MA 02116",
-  },
-  {
-    name: "The Liberty Hotel",
-    distance: "0.8 mi from the ceremony",
-    address: "215 Charles Street, Boston, MA 02114",
-  },
-];
-
 export default function SchedulePage() {
   return (
     <>
@@ -91,11 +73,6 @@ export default function SchedulePage() {
         </div>
       </section>
 
-      {/* Divider
-      <div className="flex justify-center py-4 text-espresso-light">
-
-      </div> */}
-
       {/* Getting around */}
       <section className="border-t border-cream-dark bg-sage-cream py-16 px-6 text-center">
         <div className="max-w-3xl mx-auto">
@@ -139,33 +116,6 @@ export default function SchedulePage() {
           </div>
         </div>
       </section>
-
-      {/* Accommodations
-      <section className="bg-espresso-light px-6 py-20">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="font-display text-4xl text-cream font-light mb-2">
-            Where to Stay
-          </h2>
-          <p
-            className="font-body text-xs tracking-widest uppercase mb-12 text-cream-dark"
-            style={{ letterSpacing: "0.15em" }}
-          >
-            Recommended hotels near the venue
-          </p>
-
-          <div className="space-y-8">
-            {accommodations.map((hotel, i) => (
-              <div key={i} className="border-l-2 border-cream pl-6" >
-                <p className="font-display text-2xl text-cream">{hotel.name}</p>
-                <p className="font-body text-xs mt-1 text-cream-dark">{hotel.distance}</p>
-                <p className="font-body text-sm mt-1 text-cream-dark">
-                  {hotel.address}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       <Divider />
 

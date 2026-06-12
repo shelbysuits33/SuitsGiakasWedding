@@ -15,6 +15,6 @@ export function proxy(request: NextRequest) {
 export const config = {
   // Run on every path EXCEPT: /login, /api/login, Next.js internals, and common static assets
   matcher: [
-    "/((?!login|api/login|_next/static|_next/image|favicon.ico|images/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)",
+    "/((?!login|api/login|admin|api/admin|_next/static|_next/image|favicon.ico|images/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico)$).*)",
   ],
 };
