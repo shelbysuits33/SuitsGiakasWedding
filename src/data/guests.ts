@@ -36,6 +36,11 @@ export const parties: Party[] = [
     guests: ["Kyla Ensley", "Thomas Ensley"],
   },
   {
+    id: "suits-giakas-family",
+    partyName: "The Suits & Giakas Family",
+    guests: ["Shelby Suits", "Julian Giakas"],
+  },
+  {
     id: "giakas-family",
     partyName: "The Giakas Family",
     guests: ["William Giakas", "Denise Giakas"],
