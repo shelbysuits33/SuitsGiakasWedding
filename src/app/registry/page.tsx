@@ -10,31 +10,31 @@ const registries: {
   description: string;
   href: string;
 }[] = [
-    // {
-    //   name: "Joy",
-    //   description: "Newlywed fund and universal registry - various retailers",
-    //   href: "https://withjoy.com/shelby-and-julian-sep-26/registry?utm_medium=web&utm_source=joy&utm_campaign=share_website_dialog",
-    // },
-    // {
-    //   name: "Williams Sonoma",
-    //   description: "Kitchen and entertaining",
-    //   href: "https://www.williams-sonoma.com/registry/qvxtp5twj9/registry-list.html",
-    // },
-    // {
-    //   name: "Bloomingdales",
-    //   description: "Kitchen and entertaining",
-    //   href: "https://www.bloomingdales.com/registry/Shelby-Suits-Julian-Giakas/1343344",
-    // },
-    // {
-    //   name: "Anthropologie",
-    //   description: "Home",
-    //   href: "https://www.anthropologie.com/registry/listing?registryId=079B81B7ECA7",
-    // },
-    // {
-    //   name: "Crate & Barrel",
-    //   description: "Home goods, kitchen, and entertaining",
-    //   href: "https://www.crateandbarrel.com/gift-registry/...",
-    // },
+    {
+      name: "GiftList",
+      description: "Universal registry - various retailers",
+      href: "https://giftlist.com/lists/b39e4d4a-d659-47cb-8b4e-a3f204ac6fe4",
+    },
+    {
+      name: "Williams Sonoma",
+      description: "Kitchen and entertaining",
+      href: "https://www.williams-sonoma.com/registry/qvxtp5twj9/registry-list.html",
+    },
+    {
+      name: "Bloomingdales",
+      description: "Kitchen and entertaining",
+      href: "https://www.bloomingdales.com/registry/Shelby-Suits-Julian-Giakas/1343344",
+    },
+    {
+      name: "Target",
+      description: "Home",
+      href: "https://www.target.com/gift-registry/gift/suitsgiakaswedding",
+    },
+    {
+      name: "Anthropologie",
+      description: "Home",
+      href: "https://www.anthropologie.com/registry/listing?registryId=079B81B7ECA7",
+    },
   ];
 
 export default function RegistryPage() {
