@@ -11,30 +11,11 @@ const registries: {
   href: string;
 }[] = [
     {
-      name: "GiftList",
+      name: "MyRegistry",
       description: "Universal registry - various retailers",
-      href: "https://giftlist.com/lists/b39e4d4a-d659-47cb-8b4e-a3f204ac6fe4",
+      href: "https://www.myregistry.com/giftlist/suits-giakas-wedding",
     },
-    {
-      name: "Williams Sonoma",
-      description: "Kitchen and entertaining",
-      href: "https://www.williams-sonoma.com/registry/qvxtp5twj9/registry-list.html",
-    },
-    {
-      name: "Bloomingdales",
-      description: "Kitchen and entertaining",
-      href: "https://www.bloomingdales.com/registry/Shelby-Suits-Julian-Giakas/1343344",
-    },
-    {
-      name: "Target",
-      description: "Home",
-      href: "https://www.target.com/gift-registry/gift/suitsgiakaswedding",
-    },
-    {
-      name: "Anthropologie",
-      description: "Home",
-      href: "https://www.anthropologie.com/registry/listing?registryId=079B81B7ECA7",
-    },
+   
   ];
 
 export default function RegistryPage() {
