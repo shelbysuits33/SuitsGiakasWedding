@@ -53,7 +53,13 @@ export const parties: Party[] = [
   {
     id: "ayesh-family",
     partyName: "The Ayesh Family",
-    guests: ["Sophia Giakas Ayesh", "Yusouf Ayesh", "Eleni Ayesh", "Nadir Ayesh", "Ilyas Ayesh"],
+    guests: [
+      "Sophia Giakas Ayesh",
+      "Yusouf Ayesh",
+      "Eleni Ayesh",
+      "Nadir Ayesh",
+      "Ilyas Ayesh",
+    ],
   },
   {
     id: "giakas-sebastian-family",
@@ -64,7 +70,7 @@ export const parties: Party[] = [
 
 /** Flat list of every guest name, for the lookup autocomplete. */
 export const allGuests: { partyId: string; name: string }[] = parties.flatMap(
-  (p) => p.guests.map((name) => ({ partyId: p.id, name }))
+  (p) => p.guests.map((name) => ({ partyId: p.id, name })),
 );
 
 /** Look up a party by id (server-side validation). */

@@ -71,7 +71,11 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 export default function FaqPage() {
   return (
     <>
-      <PageHeader title="FAQ" subtitle="Frequently asked questions" variant="rose" />
+      <PageHeader
+        title="FAQ"
+        subtitle="Frequently asked questions"
+        variant="rose"
+      />
 
       <section className="max-w-2xl mx-auto px-6 py-10 relative">
         <Divider className="mb-6" />

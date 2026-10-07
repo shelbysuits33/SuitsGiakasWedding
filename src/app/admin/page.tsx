@@ -105,8 +105,16 @@ export default async function AdminPage() {
       <section className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-12">
         <Stat label="Coming" value={coming} accent="text-teal" />
         <Stat label="Regrets" value={notComing} accent="text-rose-dark" />
-        <Stat label="No response" value={outstanding} accent="text-espresso-light" />
-        <Stat label="Total invited" value={totalGuests} accent="text-espresso" />
+        <Stat
+          label="No response"
+          value={outstanding}
+          accent="text-espresso-light"
+        />
+        <Stat
+          label="Total invited"
+          value={totalGuests}
+          accent="text-espresso"
+        />
       </section>
 
       {/* Per-party table */}
@@ -126,7 +134,9 @@ export default async function AdminPage() {
           return (
             <div key={p.id} className="border-t border-cream-dark pt-5">
               <div className="flex items-baseline justify-between mb-3">
-                <h2 className="font-display text-2xl text-espresso">{p.partyName}</h2>
+                <h2 className="font-display text-2xl text-espresso">
+                  {p.partyName}
+                </h2>
                 <span
                   className="font-body text-xs tracking-widest uppercase text-espresso-light"
                   style={{ letterSpacing: "0.15em" }}
@@ -137,27 +147,65 @@ export default async function AdminPage() {
               <table className="w-full text-left text-sm">
                 <thead>
                   <tr className="text-espresso-light">
-                    <th className="font-body font-normal py-2 pr-4 uppercase tracking-widest text-xs" style={{ letterSpacing: "0.12em" }}>Guest</th>
-                    <th className="font-body font-normal py-2 pr-4 uppercase tracking-widest text-xs" style={{ letterSpacing: "0.12em" }}>Attending</th>
-                    <th className="font-body font-normal py-2 pr-4 uppercase tracking-widest text-xs" style={{ letterSpacing: "0.12em" }}>Dietary</th>
-                    <th className="font-body font-normal py-2 uppercase tracking-widest text-xs" style={{ letterSpacing: "0.12em" }}>Submitted</th>
+                    <th
+                      className="font-body font-normal py-2 pr-4 uppercase tracking-widest text-xs"
+                      style={{ letterSpacing: "0.12em" }}
+                    >
+                      Guest
+                    </th>
+                    <th
+                      className="font-body font-normal py-2 pr-4 uppercase tracking-widest text-xs"
+                      style={{ letterSpacing: "0.12em" }}
+                    >
+                      Attending
+                    </th>
+                    <th
+                      className="font-body font-normal py-2 pr-4 uppercase tracking-widest text-xs"
+                      style={{ letterSpacing: "0.12em" }}
+                    >
+                      Dietary
+                    </th>
+                    <th
+                      className="font-body font-normal py-2 uppercase tracking-widest text-xs"
+                      style={{ letterSpacing: "0.12em" }}
+                    >
+                      Submitted
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   {partyRows.map(({ name, row }) => (
                     <tr key={name} className="border-t border-cream-dark/60">
-                      <td className="py-3 pr-4 font-display text-base text-espresso">{name}</td>
+                      <td className="py-3 pr-4 font-display text-base text-espresso">
+                        {name}
+                      </td>
                       <td className="py-3 pr-4">
                         {row === undefined ? (
-                          <span className="font-body text-xs italic text-espresso-light">No response</span>
+                          <span className="font-body text-xs italic text-espresso-light">
+                            No response
+                          </span>
                         ) : row.attending ? (
-                          <span className="font-body text-xs uppercase tracking-widest text-teal" style={{ letterSpacing: "0.15em" }}>Coming</span>
+                          <span
+                            className="font-body text-xs uppercase tracking-widest text-teal"
+                            style={{ letterSpacing: "0.15em" }}
+                          >
+                            Coming
+                          </span>
                         ) : (
-                          <span className="font-body text-xs uppercase tracking-widest text-rose-dark" style={{ letterSpacing: "0.15em" }}>Regrets</span>
+                          <span
+                            className="font-body text-xs uppercase tracking-widest text-rose-dark"
+                            style={{ letterSpacing: "0.15em" }}
+                          >
+                            Regrets
+                          </span>
                         )}
                       </td>
-                      <td className="py-3 pr-4 font-body text-sm text-espresso">{row?.dietary || ""}</td>
-                      <td className="py-3 font-body text-xs text-espresso-light">{row ? fmtDate(row.submitted_at) : ""}</td>
+                      <td className="py-3 pr-4 font-body text-sm text-espresso">
+                        {row?.dietary || ""}
+                      </td>
+                      <td className="py-3 font-body text-xs text-espresso-light">
+                        {row ? fmtDate(row.submitted_at) : ""}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -170,7 +218,15 @@ export default async function AdminPage() {
   );
 }
 
-function Stat({ label, value, accent }: { label: string; value: number; accent: string }) {
+function Stat({
+  label,
+  value,
+  accent,
+}: {
+  label: string;
+  value: number;
+  accent: string;
+}) {
   return (
     <div className="border border-cream-dark p-4">
       <p

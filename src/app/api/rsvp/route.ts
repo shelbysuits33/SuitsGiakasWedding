@@ -20,31 +20,44 @@ export async function POST(request: Request) {
   try {
     body = (await request.json()) as Body;
   } catch {
-    return NextResponse.json({ ok: false, error: "Invalid JSON" }, { status: 400 });
+    return NextResponse.json(
+      { ok: false, error: "Invalid JSON" },
+      { status: 400 },
+    );
   }
 
-  if (!body || typeof body.partyId !== "string" || !Array.isArray(body.responses)) {
+  if (
+    !body ||
+    typeof body.partyId !== "string" ||
+    !Array.isArray(body.responses)
+  ) {
     return NextResponse.json(
       { ok: false, error: "partyId and responses required" },
-      { status: 400 }
+      { status: 400 },
     );
   }
 
   const party = findParty(body.partyId);
   if (!party) {
-    return NextResponse.json({ ok: false, error: "Unknown party" }, { status: 404 });
+    return NextResponse.json(
+      { ok: false, error: "Unknown party" },
+      { status: 404 },
+    );
   }
 
   const allowedNames = new Set(party.guests);
   const cleaned: Response[] = [];
   for (const r of body.responses) {
     if (!isResponse(r)) {
-      return NextResponse.json({ ok: false, error: "Bad response shape" }, { status: 400 });
+      return NextResponse.json(
+        { ok: false, error: "Bad response shape" },
+        { status: 400 },
+      );
     }
     if (!allowedNames.has(r.name)) {
       return NextResponse.json(
         { ok: false, error: `Guest '${r.name}' not in this party` },
-        { status: 400 }
+        { status: 400 },
       );
     }
     cleaned.push({
@@ -71,7 +84,7 @@ export async function POST(request: Request) {
     console.error("[rsvp] db error", e);
     return NextResponse.json(
       { ok: false, error: "Could not save your RSVP — please try again." },
-      { status: 500 }
+      { status: 500 },
     );
   }
 

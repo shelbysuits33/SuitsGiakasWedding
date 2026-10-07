@@ -1,4 +1,5 @@
-type Variant = "default" | "sage" | "olive" | "muted" | "mist" | "rose" | "espresso";
+type Variant =
+  "default" | "sage" | "olive" | "muted" | "mist" | "rose" | "espresso";
 
 interface PageHeaderProps {
   title: string;
@@ -6,7 +7,16 @@ interface PageHeaderProps {
   variant?: Variant;
 }
 
-const variantClasses: Record<Variant, { bg: string; title: string; subtitle: string; border: string; divider: string }> = {
+const variantClasses: Record<
+  Variant,
+  {
+    bg: string;
+    title: string;
+    subtitle: string;
+    border: string;
+    divider: string;
+  }
+> = {
   default: {
     bg: "",
     title: "text-espresso",
@@ -58,12 +68,19 @@ const variantClasses: Record<Variant, { bg: string; title: string; subtitle: str
   },
 };
 
-export default function PageHeader({ title, subtitle, variant = "default" }: PageHeaderProps) {
+export default function PageHeader({
+  title,
+  subtitle,
+  variant = "default",
+}: PageHeaderProps) {
   const v = variantClasses[variant];
   return (
-    <div className={`relative text-center py-20 px-6 border-b overflow-hidden ${v.bg} ${v.border}`}>
-
-      <h1 className={`font-display text-5xl md:text-6xl font-light relative ${v.title}`}>
+    <div
+      className={`relative text-center py-20 px-6 border-b overflow-hidden ${v.bg} ${v.border}`}
+    >
+      <h1
+        className={`font-display text-5xl md:text-6xl font-light relative ${v.title}`}
+      >
         {title}
       </h1>
       {subtitle && (
