@@ -27,13 +27,15 @@ export default function RsvpPage() {
     if (!p) return;
     setParty(p);
     setResponses(
-      p.guests.map((name) => ({ name, attending: null, dietary: "" }))
+      p.guests.map((name) => ({ name, attending: null, dietary: "" })),
     );
     setQuery("");
   }
 
   function updateResponse(i: number, patch: Partial<Response>) {
-    setResponses((rs) => rs.map((r, idx) => (idx === i ? { ...r, ...patch } : r)));
+    setResponses((rs) =>
+      rs.map((r, idx) => (idx === i ? { ...r, ...patch } : r)),
+    );
   }
 
   const allAnswered = responses.every((r) => r.attending !== null);
@@ -73,7 +75,11 @@ export default function RsvpPage() {
   if (parties.length === 0) {
     return (
       <>
-        <PageHeader title="RSVP" subtitle="We can't wait to celebrate with you" variant="rose" />
+        <PageHeader
+          title="RSVP"
+          subtitle="We can't wait to celebrate with you"
+          variant="rose"
+        />
         <section className="max-w-xl mx-auto px-6 py-20 text-center">
           <p className="font-display text-xl text-espresso italic">
             The guest list isn&apos;t ready yet. Please check back soon.
@@ -115,7 +121,9 @@ export default function RsvpPage() {
               Start typing your name and we&apos;ll pull up your invitation.
             </p>
             <div className="relative">
-              <label htmlFor="guest" className="sr-only">Your name</label>
+              <label htmlFor="guest" className="sr-only">
+                Your name
+              </label>
               <input
                 id="guest"
                 type="text"
@@ -142,7 +150,10 @@ export default function RsvpPage() {
                 </ul>
               )}
               {query.trim().length >= 2 && suggestions.length === 0 && (
-                <p className="mt-4 font-body text-xs uppercase tracking-widest text-rose-dark" style={{ letterSpacing: "0.15em" }}>
+                <p
+                  className="mt-4 font-body text-xs uppercase tracking-widest text-rose-dark"
+                  style={{ letterSpacing: "0.15em" }}
+                >
                   We couldn&apos;t find that name. Try a different spelling?
                 </p>
               )}
@@ -156,7 +167,9 @@ export default function RsvpPage() {
 
             {responses.map((r, i) => (
               <div key={r.name} className="border-b border-cream-dark pb-6">
-                <p className="font-display text-xl text-espresso mb-3">{r.name}</p>
+                <p className="font-display text-xl text-espresso mb-3">
+                  {r.name}
+                </p>
 
                 <div className="flex gap-3 mb-4">
                   <button
@@ -187,13 +200,18 @@ export default function RsvpPage() {
 
                 {r.attending === true && (
                   <div>
-                    <label className="block font-body text-xs uppercase tracking-widest text-espresso-light mb-1" style={{ letterSpacing: "0.15em" }}>
+                    <label
+                      className="block font-body text-xs uppercase tracking-widest text-espresso-light mb-1"
+                      style={{ letterSpacing: "0.15em" }}
+                    >
                       Dietary restrictions or allergies (optional)
                     </label>
                     <input
                       type="text"
                       value={r.dietary}
-                      onChange={(e) => updateResponse(i, { dietary: e.target.value })}
+                      onChange={(e) =>
+                        updateResponse(i, { dietary: e.target.value })
+                      }
                       placeholder="e.g. vegetarian, no peanuts"
                       className="w-full font-body text-sm bg-transparent border-b border-cream-dark text-espresso placeholder:text-espresso-light/50 py-2 outline-none focus:border-teal transition-colors"
                     />
@@ -203,7 +221,10 @@ export default function RsvpPage() {
             ))}
 
             {error && (
-              <p className="font-body text-xs uppercase tracking-widest text-rose-dark text-center" style={{ letterSpacing: "0.15em" }}>
+              <p
+                className="font-body text-xs uppercase tracking-widest text-rose-dark text-center"
+                style={{ letterSpacing: "0.15em" }}
+              >
                 {error}
               </p>
             )}
@@ -211,7 +232,11 @@ export default function RsvpPage() {
             <div className="flex gap-3 justify-center pt-2">
               <button
                 type="button"
-                onClick={() => { setParty(null); setResponses([]); setError(null); }}
+                onClick={() => {
+                  setParty(null);
+                  setResponses([]);
+                  setError(null);
+                }}
                 className="font-body text-xs tracking-widest uppercase px-6 py-3 border border-cream-dark text-espresso-light hover:text-espresso hover:border-espresso transition-colors"
                 style={{ letterSpacing: "0.15em" }}
               >

@@ -37,10 +37,11 @@ export default function Navbar() {
             <li key={href}>
               <Link
                 href={href}
-                className={`font-body text-xs tracking-widest uppercase transition-colors ${pathname === href
-                  ? "text-teal border-b border-teal pb-0.5"
-                  : "text-espresso-light hover:text-sage"
-                  }`}
+                className={`font-body text-xs tracking-widest uppercase transition-colors ${
+                  pathname === href
+                    ? "text-teal border-b border-teal pb-0.5"
+                    : "text-espresso-light hover:text-sage"
+                }`}
                 style={{ letterSpacing: "0.15em" }}
               >
                 {label}
@@ -70,8 +71,9 @@ export default function Navbar() {
                 <Link
                   href={href}
                   onClick={() => setOpen(false)}
-                  className={`font-body text-xs tracking-widest uppercase ${pathname === href ? "text-sage" : "text-espresso-light"
-                    }`}
+                  className={`font-body text-xs tracking-widest uppercase ${
+                    pathname === href ? "text-sage" : "text-espresso-light"
+                  }`}
                   style={{ letterSpacing: "0.15em" }}
                 >
                   {label}

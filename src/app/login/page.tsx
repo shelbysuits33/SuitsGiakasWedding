@@ -87,7 +87,10 @@ export default function LoginPage() {
 
         <div className="h-6 mt-3">
           {error && (
-            <p className="font-body text-xs text-rose-dark uppercase tracking-widest" style={{ letterSpacing: "0.15em" }}>
+            <p
+              className="font-body text-xs text-rose-dark uppercase tracking-widest"
+              style={{ letterSpacing: "0.15em" }}
+            >
               That password isn&apos;t quite right
             </p>
           )}

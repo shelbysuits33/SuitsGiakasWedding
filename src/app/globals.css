@@ -2,21 +2,20 @@
 
 @theme inline {
   /* Color palette — drawn from mood board */
-  --color-teal: #51776E;
-  --color-steel: #8CA3AB;
-  --color-sage: #A3AB8C;
-  --color-cream: #E7DFD0;
-  --color-rose: #B28583;
-  --color-rose-dark: #9D6562;
+  --color-teal: #51776e;
+  --color-steel: #8ca3ab;
+  --color-sage: #a3ab8c;
+  --color-cream: #e7dfd0;
+  --color-rose: #b28583;
+  --color-rose-dark: #9d6562;
   --color-espresso: #524340;
   --color-cream-dark: #ddd4c0;
   --color-espresso-light: #6b5d57;
   --color-terracotta: #b8603a;
   --color-gold: #c4a44a;
   --color-vine: #3d6b3a;
-  --color-sage-cream: #BBBBA0;
+  --color-sage-cream: #bbbba0;
   --color-ink: #3f5560;
-
 
   /* Fonts */
   --font-display: var(--font-cormorant);
@@ -33,8 +32,8 @@ body {
   font-family: var(--font-body), Georgia, serif;
   /* Faint stained-glass mosaic wash beneath a cream veil for a subtle parchment texture */
   background-color: var(--color-cream);
-  background-image: linear-gradient(rgba(231, 223, 208, 1),
-      rgba(231, 223, 208, 0.7)),
+  background-image:
+    linear-gradient(rgba(231, 223, 208, 1), rgba(231, 223, 208, 0.7)),
     url("/images/mosaic.jpg");
   background-size: cover;
   background-position: center;

@@ -10,13 +10,12 @@ const registries: {
   description: string;
   href: string;
 }[] = [
-    {
-      name: "MyRegistry",
-      description: "Universal registry - various retailers",
-      href: "https://www.myregistry.com/giftlist/suits-giakas-wedding",
-    },
-   
-  ];
+  {
+    name: "MyRegistry",
+    description: "Universal registry - various retailers",
+    href: "https://www.myregistry.com/giftlist/suits-giakas-wedding",
+  },
+];
 
 export default function RegistryPage() {
   return (
@@ -24,7 +23,10 @@ export default function RegistryPage() {
       <PageHeader title="Registry" subtitle="Gifts & wishes" variant="rose" />
 
       <section className="max-w-2xl mx-auto px-6 py-20">
-        <p className="font-display text-2xl text-espresso font-light italic text-center mb-16 leading-relaxed" style={{ opacity: 0.85 }}>
+        <p
+          className="font-display text-2xl text-espresso font-light italic text-center mb-16 leading-relaxed"
+          style={{ opacity: 0.85 }}
+        >
           Your presence at our wedding is the greatest gift of all. For those
           who wish to celebrate us further, we&apos;ve registered at the
           following:
@@ -32,7 +34,10 @@ export default function RegistryPage() {
 
         {registries.length === 0 ? (
           <div className="text-center py-12 relative">
-            <p className="font-display text-2xl text-espresso font-light italic" style={{ opacity: 0.6 }}>
+            <p
+              className="font-display text-2xl text-espresso font-light italic"
+              style={{ opacity: 0.6 }}
+            >
               Registry links coming soon.
             </p>
           </div>
@@ -55,7 +60,9 @@ export default function RegistryPage() {
                       {reg.description}
                     </p>
                   </div>
-                  <span className="text-sage group-hover:text-teal text-xl">→</span>
+                  <span className="text-sage group-hover:text-teal text-xl">
+                    →
+                  </span>
                 </div>
               </a>
             ))}

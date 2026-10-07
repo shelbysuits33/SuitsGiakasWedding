@@ -11,7 +11,7 @@ function getSql(): Sql {
   const url = process.env.DATABASE_URL;
   if (!url) {
     throw new Error(
-      "DATABASE_URL is not set. Install Neon Postgres via the Vercel Marketplace, then `vercel env pull .env.local`."
+      "DATABASE_URL is not set. Install Neon Postgres via the Vercel Marketplace, then `vercel env pull .env.local`.",
     );
   }
   _sql = neon(url);
@@ -24,10 +24,12 @@ function getSql(): Sql {
  */
 export const sql = ((strings: TemplateStringsArray, ...values: unknown[]) =>
   // The Neon client accepts tagged-template calls directly.
-  (getSql() as unknown as (
-    s: TemplateStringsArray,
-    ...v: unknown[]
-  ) => Promise<unknown>)(strings, ...values)) as unknown as Sql;
+  (
+    getSql() as unknown as (
+      s: TemplateStringsArray,
+      ...v: unknown[]
+    ) => Promise<unknown>
+  )(strings, ...values)) as unknown as Sql;
 
 let schemaEnsured = false;
 

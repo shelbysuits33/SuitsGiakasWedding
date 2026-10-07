@@ -56,9 +56,7 @@ export default function Home() {
             Save the Date
           </p>
           <p className="font-display text-2xl text-cream">9 · 25 · 2026</p>
-          <p className="font-body text-sm text-cream-dark mt-1">
-            Friday
-          </p>
+          <p className="font-body text-sm text-cream-dark mt-1">Friday</p>
           <p className="font-body text-sm text-cream-dark">
             Boston, Massachusetts
           </p>

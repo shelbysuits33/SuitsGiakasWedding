@@ -1,7 +1,12 @@
 import PageHeader from "../_components/PageHeader";
 import Divider from "../_components/Divider";
 
-const categories: { label: string; color: string; bgColor: string; items: { name: string; detail: string; description: string }[] }[] = [
+const categories: {
+  label: string;
+  color: string;
+  bgColor: string;
+  items: { name: string; detail: string; description: string }[];
+}[] = [
   {
     label: "Eat & Drink",
     color: "text-teal",
@@ -16,8 +21,7 @@ const categories: { label: string; color: string; bgColor: string; items: { name
       {
         name: "North Street Grill",
         detail: "North End",
-        description:
-          "American diner with a popular weekend brunch service.",
+        description: "American diner with a popular weekend brunch service.",
       },
       {
         name: "Bricco",
@@ -46,14 +50,12 @@ const categories: { label: string; color: string; bgColor: string; items: { name
       {
         name: "Lucy's Ethiopian Cafe",
         detail: "South End",
-        description:
-          "Casual Ethiopian cafe open for lunch and dinner.",
+        description: "Casual Ethiopian cafe open for lunch and dinner.",
       },
       {
         name: "Tora Japanese Restaurant",
         detail: "Chinatown",
-        description:
-          "Tiny sushi restaurant in the heart of Chinatown.",
+        description: "Tiny sushi restaurant in the heart of Chinatown.",
       },
     ],
   },
@@ -138,16 +140,21 @@ export default function BostonPage() {
     <>
       <PageHeader
         title="Boston"
-        subtitle="A guide to the city we call home" variant="rose"
+        subtitle="A guide to the city we call home"
+        variant="rose"
       />
 
       <section className="max-w-4xl mx-auto px-6 py-20">
-        <p className="font-display text-3xl text-espresso font-light italic text-center max-w-2xl mx-auto leading-relaxed" style={{ opacity: 0.85 }}>
+        <p
+          className="font-display text-3xl text-espresso font-light italic text-center max-w-2xl mx-auto leading-relaxed"
+          style={{ opacity: 0.85 }}
+        >
           Boston in late September is golden. Here are our favorite places for
           you to explore before and after the wedding.
         </p>
         <p className="font-display text-xl text-espresso-light font-light text-center mb-20 max-w-lg mx-auto leading-relaxed mt-4">
-          We have so many more recommendations! Please reach out to us if you&apos;re looking for additional activities or dining options!
+          We have so many more recommendations! Please reach out to us if
+          you&apos;re looking for additional activities or dining options!
         </p>
 
         {categories.map((cat, i) => (
@@ -166,7 +173,10 @@ export default function BostonPage() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
                 {cat.items.map((item) => (
-                  <div key={item.name} className="border-b border-cream-dark pb-8">
+                  <div
+                    key={item.name}
+                    className="border-b border-cream-dark pb-8"
+                  >
                     <p className="font-display text-2xl text-espresso">
                       {item.name}
                     </p>
@@ -216,7 +226,8 @@ export default function BostonPage() {
                 The T (Subway)
               </p>
               <p className="font-body text-sm leading-relaxed text-espresso-light">
-                The T and bus lines are reliable, safe, and affordable. To enter the train/bus, just tap your credit card or apple pay.
+                The T and bus lines are reliable, safe, and affordable. To enter
+                the train/bus, just tap your credit card or apple pay.
               </p>
             </div>
             <div>

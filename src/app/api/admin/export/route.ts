@@ -21,7 +21,10 @@ export async function GET() {
     await ensureSchema();
   } catch (e) {
     console.error("[export] schema error", e);
-    return NextResponse.json({ ok: false, error: "DB unavailable" }, { status: 500 });
+    return NextResponse.json(
+      { ok: false, error: "DB unavailable" },
+      { status: 500 },
+    );
   }
 
   const rows = (await sql`
@@ -55,7 +58,7 @@ export async function GET() {
           csvCell(r ? (r.attending ? "yes" : "no") : ""),
           csvCell(r?.dietary ?? ""),
           csvCell(r?.submitted_at ?? ""),
-        ].join(",")
+        ].join(","),
       );
     }
   }

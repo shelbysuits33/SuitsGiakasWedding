@@ -28,7 +28,11 @@ const events = [
 export default function SchedulePage() {
   return (
     <>
-      <PageHeader title="Schedule" subtitle="Friday, September 25, 2026" variant="rose" />
+      <PageHeader
+        title="Schedule"
+        subtitle="Friday, September 25, 2026"
+        variant="rose"
+      />
 
       {/* Timeline */}
       <section className="max-w-3xl mx-auto px-6 py-20">
@@ -99,7 +103,8 @@ export default function SchedulePage() {
                 The T (Subway)
               </p>
               <p className="font-body text-sm leading-relaxed text-espresso-light">
-                The T and bus lines are reliable, safe, and affordable. To enter the train/bus, just tap your credit card or apple pay.
+                The T and bus lines are reliable, safe, and affordable. To enter
+                the train/bus, just tap your credit card or apple pay.
               </p>
             </div>
             <div>
@@ -127,8 +132,9 @@ export default function SchedulePage() {
         >
           Dress Code
         </p>
-        <p className="font-display text-4xl font-light text-cream">Cocktail Attire</p>
-
+        <p className="font-display text-4xl font-light text-cream">
+          Cocktail Attire
+        </p>
       </section>
     </>
   );
