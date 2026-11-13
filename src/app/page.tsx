@@ -32,8 +32,7 @@ export default function Home() {
           </p>
           <span className="block w-12 h-px bg-gold" />
         </div>
-
-        <div className="mt-10 flex flex-col sm:flex-row gap-4 relative">
+        {/* <div className="mt-10 flex flex-col sm:flex-row gap-4 relative">
           <Link
             href="/rsvp"
             className="font-body text-xs tracking-widest uppercase px-8 py-3 border border-teal text-teal hover:bg-teal hover:text-cream transition-colors"
@@ -41,13 +40,13 @@ export default function Home() {
           >
             Répondez s'il vous plaît
           </Link>
-        </div>
+        </div> */}
       </section>
 
       <Divider />
 
       {/* Details strip */}
-      <section className="bg-rose border-t border-b border-rose-dark grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-rose-dark">
+      {/* <section className="bg-rose border-t border-b border-rose-dark grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-rose-dark">
         <div className="py-14 px-10 text-center">
           <p
             className="font-body text-xs tracking-widest text-cream-dark uppercase mb-3"
@@ -88,34 +87,41 @@ export default function Home() {
           </p>
           <p className="font-body text-sm text-cream-dark">6:00 PM</p>
         </div>
-      </section>
+      </section> */}
 
       {/* Mood quote */}
       <section className="py-24 px-6 text-center max-w-2xl mx-auto relative">
         <p className="font-display text-3xl md:text-4xl text-espresso font-light italic leading-relaxed">
-          &ldquo;Come celebrate with us in the city we love.&rdquo;
+          &ldquo;CHANGE QUOTE.&rdquo;
         </p>
         <div className="mt-8 flex justify-center gap-8">
           <Link
-            href="/boston"
+            href="/our-story"
             className="font-body text-xs tracking-widest uppercase text-sage border-b border-sage pb-0.5 hover:text-espresso hover:border-espresso transition-colors"
             style={{ letterSpacing: "0.15em" }}
           >
-            Explore Boston
+            Our Story
+          </Link>
+          <Link
+            href="/the-wedding"
+            className="font-body text-xs tracking-widest uppercase text-sage border-b border-sage pb-0.5 hover:text-espresso hover:border-espresso transition-colors"
+            style={{ letterSpacing: "0.15em" }}
+          >
+            The Wedding
           </Link>
           <Link
             href="/gallery"
             className="font-body text-xs tracking-widest uppercase text-sage border-b border-sage pb-0.5 hover:text-espresso hover:border-espresso transition-colors"
             style={{ letterSpacing: "0.15em" }}
           >
-            Our Gallery
+            Wedding Photos
           </Link>
           <Link
-            href="/registry"
+            href="/memory-lane"
             className="font-body text-xs tracking-widest uppercase text-sage border-b border-sage pb-0.5 hover:text-espresso hover:border-espresso transition-colors"
             style={{ letterSpacing: "0.15em" }}
           >
-            Registry
+            Memory Lane
           </Link>
         </div>
       </section>
