@@ -1,7 +1,15 @@
+import type { ReactNode } from "react";
+
+export type StoryQuote = {
+  text: string;
+  attribution: ReactNode;
+};
+
 interface StorySectionProps {
   label: string;
   title: string;
-  paragraphs: string[];
+  paragraphs: ReactNode[];
+  quote?: StoryQuote;
   tone?: "cream" | "sage";
 }
 
@@ -9,6 +17,7 @@ export default function StorySection({
   label,
   title,
   paragraphs,
+  quote,
   tone = "cream",
 }: StorySectionProps) {
   return (
@@ -27,12 +36,26 @@ export default function StorySection({
           {paragraphs.map((text, i) => (
             <p
               key={i}
-              className="font-body text-sm leading-relaxed text-espresso-light"
+              className="font-body text-sm leading-relaxed text-espresso-light [&_strong]:font-medium [&_strong]:text-espresso"
             >
               {text}
             </p>
           ))}
         </div>
+
+        {quote && (
+          <blockquote className="mt-8 border-t border-cream-dark pt-6">
+            <p className="font-display text-lg md:text-xl italic font-light leading-relaxed text-espresso">
+              &ldquo;{quote.text}&rdquo;
+            </p>
+            <footer
+              className="font-body text-xs tracking-widest text-teal uppercase mt-6"
+              style={{ letterSpacing: "0.15em" }}
+            >
+              &mdash; {quote.attribution}
+            </footer>
+          </blockquote>
+        )}
       </div>
     </section>
   );
