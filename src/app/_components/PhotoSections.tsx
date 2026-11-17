@@ -1,7 +1,5 @@
-import { readFileSync } from "node:fs";
-import path from "node:path";
-import { imageSize } from "image-size";
 import Image from "next/image";
+import { getPhotoDimensions } from "./photoDimensions";
 
 export type PhotoSection = {
   title: string;
@@ -13,12 +11,6 @@ export type PhotoSection = {
 // tightly instead of leaving whitespace. Tuned for the 3-column desktop
 // view; other breakpoints fall back gracefully (see grid-auto-rows below).
 const REFERENCE_COLUMN_WIDTH = 320;
-
-function getPhotoDimensions(src: string) {
-  const filePath = path.join(process.cwd(), "public", src);
-  const { width, height } = imageSize(readFileSync(filePath));
-  return { width, height };
-}
 
 function getPhotoSpan(width: number, height: number) {
   return Math.max(1, Math.round((height / width) * REFERENCE_COLUMN_WIDTH));

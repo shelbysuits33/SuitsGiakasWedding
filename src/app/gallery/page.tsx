@@ -87,8 +87,9 @@ const sectionDefinitions: {
       [133, 167],
       [228, 239],
       [182, 201],
+      [470, 473],
     ],
-    film: [2, 5, 6, 7, 8, 12, 15, 42, 48, 49, 55, 56, 57, 59],
+    film: [2, 5, 6, 7, 8, 12, 15, 42, 48, 49, 55, 56, 57, 58, 59],
     priority: true,
     reversed: true,
     first: { film: [43] },
@@ -97,9 +98,10 @@ const sectionDefinitions: {
     title: "Family Photos",
     wedding: [
       [451, 512],
-      [724, 961],
+      [725, 961],
     ],
     film: [5, 6, 8, 12, 15, 55, 56, 57, 58, 59],
+    filmFirst: true,
   },
   {
     title: "After Party",
@@ -109,7 +111,7 @@ const sectionDefinitions: {
     // followed by 516, 513, 546 and 553 (two men laughing, the hug and the two
     // window shots).
     first: {
-      wedding: [704, 664, 651, 615, 561, 564],
+      wedding: [704, 724, 664, 651, 615, 561, 564],
     },
     wedding: [
       661,

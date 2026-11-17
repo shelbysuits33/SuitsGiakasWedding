@@ -1,14 +1,22 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
+import { getPhotoDimensions } from "./photoDimensions";
 
 export type StoryQuote = {
   text: string;
   attribution: ReactNode;
 };
 
+export type StoryPhoto = {
+  src: string;
+  alt: string;
+};
+
 interface StorySectionProps {
   label: string;
   title: string;
   paragraphs: ReactNode[];
+  photos?: StoryPhoto[];
   quote?: StoryQuote;
   tone?: "cream" | "sage";
 }
@@ -17,6 +25,7 @@ export default function StorySection({
   label,
   title,
   paragraphs,
+  photos = [],
   quote,
   tone = "cream",
 }: StorySectionProps) {
@@ -42,6 +51,29 @@ export default function StorySection({
             </p>
           ))}
         </div>
+
+        {photos.length > 0 && (
+          <div
+            className={`mt-10 grid gap-4 items-start ${
+              photos.length > 1 ? "sm:grid-cols-2" : "max-w-sm mx-auto"
+            }`}
+          >
+            {photos.map((photo) => {
+              const { width, height } = getPhotoDimensions(photo.src);
+              return (
+                <Image
+                  key={photo.src}
+                  src={photo.src}
+                  alt={photo.alt}
+                  width={width}
+                  height={height}
+                  className="w-full h-auto block"
+                  sizes="(max-width: 640px) 100vw, 336px"
+                />
+              );
+            })}
+          </div>
+        )}
 
         {quote && (
           <blockquote className="mt-8 border-t border-cream-dark pt-6">

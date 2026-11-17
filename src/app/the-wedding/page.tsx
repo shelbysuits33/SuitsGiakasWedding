@@ -1,7 +1,10 @@
 import type { ReactNode } from "react";
 import Divider from "../_components/Divider";
 import PageHeader from "../_components/PageHeader";
-import StorySection, { type StoryQuote } from "../_components/StorySection";
+import StorySection, {
+  type StoryPhoto,
+  type StoryQuote,
+} from "../_components/StorySection";
 
 /*
   Blurbs about the wedding day. Replace the [Placeholder] text with your own,
@@ -9,16 +12,31 @@ import StorySection, { type StoryQuote } from "../_components/StorySection";
 
   Plain text goes in quotes. To format part of a paragraph, wrap it in
   <>...</> and use <em>italic</em> or <strong>bold</strong> inside.
+
+  To add photos to a section, give it a photos list, for example:
+    photos: [
+      { src: "/images/gallery/shelbyjulianwedding.devstroudphoto-704.jpg",
+        alt: "Shelby and Julian at dinner" },
+    ],
+  They appear under the paragraphs (one photo centered, two or more side by
+  side). A section with no photos list shows no photos.
 */
 const sections: {
   label: string;
   title: string;
   paragraphs: ReactNode[];
+  photos?: StoryPhoto[];
   quote?: StoryQuote;
 }[] = [
   {
     label: "Friday, September 25, 2026",
     title: "The Ceremony",
+    photos: [
+      {
+        src: "/images/gallery/shelbyjulianwedding.devstroudphoto-446.jpg",
+        alt: "Shelby and Julian sharing a quiet moment at the altar of Lindsey Chapel",
+      },
+    ],
     paragraphs: [
       "The ceremony took place at Lindsey Chapel at Emmanuel Church on Newbury Street in Boston.",
       <>
@@ -46,6 +64,16 @@ const sections: {
   {
     label: "Celebrating With Them",
     title: "The Guests",
+    photos: [
+      {
+        src: "/images/gallery/shelbyjulianwedding.devstroudphoto-498.jpg",
+        alt: "Shelby, Julian, and their families by the pond in the Public Garden",
+      },
+      {
+        src: "/images/gallery/shelbyjulianwedding.devstroudphoto-512.jpg",
+        alt: "Shelby and Julian with their families under the willow trees",
+      },
+    ],
     paragraphs: [
       "Their immediate families flew in from Michigan, Illinois, and New Jersey to celebrate with them.",
       "Shelby's older sister, Kyla, served as maid of honor. Julian's brothers, Andreas and Sebastian, stood beside him as co-best men.",
@@ -54,6 +82,16 @@ const sections: {
   {
     label: "Dinner & Drinks",
     title: "The Party",
+    photos: [
+      {
+        src: "/images/gallery/shelbyjulianwedding.devstroudphoto-544.jpg",
+        alt: "Mamma Maria in the North End at night",
+      },
+      {
+        src: "/images/gallery/shelbyjulianwedding.devstroudphoto-724.jpg",
+        alt: "Shelby and Julian posing together in the dining room at Mamma Maria",
+      },
+    ],
     paragraphs: [
       "The celebration continued at Mamma Maria in the North End with dinner, drinks, and dessert.",
       "They chose Mamma Maria as a nod to Julian's Italian heritage and because it's one of their favorite restaurants in Boston. Shelby wore her late Great-Aunt Sue's 1982 wedding dress, a special way to honor her memory.",
@@ -70,16 +108,13 @@ export default function TheWeddingPage() {
         variant="rose"
       />
 
-      <div className="max-w-5xl mx-auto px-6 pt-10">
-        <Divider />
-      </div>
-
       {sections.map((section, i) => (
         <StorySection
           key={section.title}
           label={section.label}
           title={section.title}
           paragraphs={section.paragraphs}
+          photos={section.photos}
           quote={section.quote}
           tone={i % 2 === 1 ? "sage" : "cream"}
         />
