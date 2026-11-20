@@ -15,6 +15,7 @@ const jost = Jost({
   variable: "--font-jost",
   subsets: ["latin"],
   weight: ["300", "400", "500"],
+  style: ["normal", "italic"],
 });
 
 const pinyon = Pinyon_Script({
