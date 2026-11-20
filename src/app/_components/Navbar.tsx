@@ -3,19 +3,22 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { V2 } from "@/lib/flags";
 
-const links = [
+// Links marked v2 only show when the V2 flag is on (see src/lib/flags.ts).
+const allLinks: { href: string; label: string; v2?: boolean }[] = [
   { href: "/", label: "Home" },
-  { href: "/our-story", label: "Our Story" },
+  { href: "/our-story", label: "Our Story", v2: true },
   { href: "/the-wedding", label: "The Wedding" },
-  // { href: "/rsvp", label: "RSVP" },
-  // { href: "/schedule", label: "Schedule" },
+  { href: "/rsvp", label: "RSVP", v2: true },
+  { href: "/schedule", label: "Schedule", v2: true },
   { href: "/gallery", label: "Wedding Photos" },
   { href: "/memory-lane", label: "Memory Lane" },
-  // { href: "/boston", label: "Boston" },
-  // { href: "/registry", label: "Registry" },
-  // { href: "/faq", label: "FAQ" },
+  { href: "/boston", label: "Boston", v2: true },
+  { href: "/registry", label: "Registry", v2: true },
+  { href: "/faq", label: "FAQ", v2: true },
 ];
+const links = allLinks.filter((link) => V2 || !link.v2);
 
 export default function Navbar() {
   const pathname = usePathname();

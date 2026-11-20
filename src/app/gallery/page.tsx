@@ -51,7 +51,7 @@ const sectionDefinitions: {
   first?: { wedding?: PhotoNumbers; film?: PhotoNumbers };
 }[] = [
   {
-    title: "Shelby Getting Ready",
+    title: "Getting Ready - Suits Family",
     wedding: [
       [55, 167],
       [213, 221],
@@ -61,12 +61,9 @@ const sectionDefinitions: {
     filmFirst: true,
   },
   {
-    title: "Julian Getting Ready",
-    wedding: [
-      [1, 54],
-      [168, 209],
-      [222, 223],
-    ],
+    title: "Getting Ready - Giakas Family",
+    // Photo 5 (the cat) is listed after 6-14 so it lands in the second row.
+    wedding: [[6, 14], 5, [1, 4], [15, 54], [168, 209], [222, 223]],
     film: [3, 10, 11],
   },
   {
@@ -104,7 +101,7 @@ const sectionDefinitions: {
     filmFirst: true,
   },
   {
-    title: "After Party",
+    title: "After-Party",
     // Photos of the two of them lead the section. Then the empty tables and
     // place settings, then the dinner (the photographer put those table shots
     // last). The street photos outside the restaurant come near the end,

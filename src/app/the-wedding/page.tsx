@@ -94,7 +94,7 @@ const sections: {
     ],
     paragraphs: [
       "The celebration continued at Mamma Maria in the North End with dinner, drinks, and dessert.",
-      "They chose Mamma Maria as a nod to Julian's Italian heritage and because it's one of their favorite restaurants in Boston. Shelby wore her late Great-Aunt Sue's 1982 wedding dress, a special way to honor her memory.",
+      "They chose Mamma Maria as a nod to Julian's Italian heritage and because it's one of their favorite restaurants in Boston. Shelby wore her late Great-Aunt Sue's 1982 wedding dress.",
     ],
   },
 ];

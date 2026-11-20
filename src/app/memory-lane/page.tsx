@@ -6,10 +6,9 @@ import PhotoSections, { type PhotoSection } from "../_components/PhotoSections";
 
 /*
   Photos live in public/images/memory-lane. Each line below is
-  [file name without .jpg, description for screen readers], grouped by year in
-  the order they were taken. "More Memories" holds photos with no date saved in
-  the file. To add a photo, drop the .jpg into that folder and add a line to
-  the right year. To add another group, add another { title, photos } entry.
+  [file name without .jpg, description for screen readers], grouped by year.
+  To add a photo, drop the .jpg into that folder and add a line to the right
+  year. To add another group, add another { title, photos } entry.
 */
 const memories: { title: string; photos: [string, string][] }[] = [
   {
@@ -17,8 +16,6 @@ const memories: { title: string; photos: [string, string][] }[] = [
     photos: [
       ["img_6756", "Julian and Shelby in a lively crowd at night"],
       ["img_7186", "Julian and Shelby dressed up for the MBA formal"],
-      ["img_7187", "Julian and Shelby at the MBA formal"],
-      ["img_0086", "Julian and Shelby at a restaurant table"],
       ["img_0177", "Julian and Shelby with friends around a fire pit"],
       ["img_7293", "Julian and Shelby on graduation day"],
       ["img_0286", "Julian and Shelby after a white coat ceremony"],
@@ -43,9 +40,7 @@ const memories: { title: string; photos: [string, string][] }[] = [
       ["img_4397", "Julian and Shelby in a selfie beside a river"],
       ["img_6944", "Julian and Shelby among wine barrels"],
       ["img_4660", "Julian and Shelby in front of the Sagrada Família"],
-      ["img_7577", "Julian holding a gift basket"],
       ["img_5230", "Julian and Shelby with friends at a concert"],
-      ["img_6186", "Julian and Shelby with friends on a couch"],
       ["img_8477", "Julian and Shelby in masks on a plane"],
     ],
   },
@@ -53,10 +48,10 @@ const memories: { title: string; photos: [string, string][] }[] = [
     title: "2023",
     photos: [
       ["img_0232", "Julian and Shelby in a golden-hour selfie"],
-      ["img_2006", "Julian and Shelby in a selfie"],
       ["img_8014", "Julian and Shelby hugging in a kitchen"],
       ["img_8924", "Julian and Shelby in the snow with a dog"],
       ["img_3929", "Julian and Shelby dressed up for a formal"],
+      ["img_7771", "Julian and Shelby in caps on a hike"],
     ],
   },
   {
@@ -101,20 +96,7 @@ const memories: { title: string; photos: [string, string][] }[] = [
       ["img_6973", "Julian and Shelby in front of red rock formations"],
       ["img_0931", "Julian and Shelby at dinner"],
       ["img_0957", "Julian and Shelby dressed up in front of a vineyard"],
-    ],
-  },
-  {
-    title: "More Memories",
-    photos: [
-      [
-        "a8c20a8e-05d3-4e06-a90e-4f49362ac3ce",
-        "Julian and Shelby in a silly airport selfie",
-      ],
-      ["img_3903", "Julian and Shelby in a selfie"],
-      ["img_5809", "Julian and Shelby at a dimly lit bar"],
-      ["img_6711", "Julian and Shelby in a bright selfie"],
-      ["img_7165", "Julian and Shelby dressed up at a party"],
-      ["img_7771", "Julian and Shelby in caps on a hike"],
+      ["img_0826", "Julian reading by the water in Curacao"],
     ],
   },
 ];

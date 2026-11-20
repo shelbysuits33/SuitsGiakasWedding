@@ -1,15 +1,23 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
+import { V2, isV2Path } from "@/lib/flags";
 
 const AUTH_COOKIE = "ws-auth";
 const AUTH_VALUE = "yes";
 
 export function proxy(request: NextRequest) {
   const authed = request.cookies.get(AUTH_COOKIE)?.value === AUTH_VALUE;
-  if (authed) return NextResponse.next();
+  if (!authed) {
+    const loginUrl = new URL("/login", request.url);
+    return NextResponse.redirect(loginUrl);
+  }
 
-  const loginUrl = new URL("/login", request.url);
-  return NextResponse.redirect(loginUrl);
+  // V2 pages and routes show "not found" until the flag is on (src/lib/flags.ts).
+  if (!V2 && isV2Path(request.nextUrl.pathname)) {
+    return NextResponse.rewrite(new URL("/not-found", request.url));
+  }
+
+  return NextResponse.next();
 }
 
 export const config = {
