@@ -40,7 +40,7 @@ const sections: {
     paragraphs: [
       "The ceremony took place at Lindsey Chapel at Emmanuel Church on Newbury Street in Boston.",
       <>
-        Julian and the wedding party walked down the aisle to their song, “You
+        Julian and the wedding party walked down the aisle to “You
         and Me” by Penny &amp; the Quarters. Shelby and her parents walked to
         “They Long to Be (Close to You)” by the Carpenters, one of her late Aunt
         Vicki&apos;s favorite songs. The ceremony concluded with the
