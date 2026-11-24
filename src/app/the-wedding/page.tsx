@@ -15,7 +15,7 @@ import StorySection, {
 
   To add photos to a section, give it a photos list, for example:
     photos: [
-      { src: "/images/gallery/shelbyjulianwedding.devstroudphoto-704.jpg",
+      { src: "/images/gallery/after-party/shelbyjulianwedding.devstroudphoto-704.jpg",
         alt: "Shelby and Julian at dinner" },
     ],
   They appear under the paragraphs (one photo centered, two or more side by
@@ -33,18 +33,18 @@ const sections: {
     title: "The Ceremony",
     photos: [
       {
-        src: "/images/gallery/shelbyjulianwedding.devstroudphoto-446.jpg",
+        src: "/images/gallery/ceremony/shelbyjulianwedding.devstroudphoto-446.jpg",
         alt: "Shelby and Julian sharing a quiet moment at the altar of Lindsey Chapel",
       },
     ],
     paragraphs: [
       "The ceremony took place at Lindsey Chapel at Emmanuel Church on Newbury Street in Boston.",
       <>
-        Julian and the wedding party walked down the aisle to their song, “You
-        and Me” by Penny &amp; the Quarters. Shelby and her parents walked to
-        “They Long to Be (Close to You)” by the Carpenters, one of her late Aunt
-        Vicki&apos;s favorite songs. The ceremony concluded with the
-        recessional, “This Will Be (An Everlasting Love)” by Natalie Cole.
+        Julian and the wedding party walked down the aisle to “You and Me” by
+        Penny &amp; the Quarters. Shelby and her parents walked to “They Long to
+        Be (Close to You)” by the Carpenters, one of her late Aunt Vicki&apos;s
+        favorite songs. The ceremony concluded with the recessional, “This Will
+        Be (An Everlasting Love)” by Natalie Cole.
       </>,
       <>
         The lovely Leslie Zweis officiated and gave a wonderful reflection on
@@ -66,11 +66,11 @@ const sections: {
     title: "The Guests",
     photos: [
       {
-        src: "/images/gallery/shelbyjulianwedding.devstroudphoto-498.jpg",
+        src: "/images/gallery/family-photos/shelbyjulianwedding.devstroudphoto-498.jpg",
         alt: "Shelby, Julian, and their families by the pond in the Public Garden",
       },
       {
-        src: "/images/gallery/shelbyjulianwedding.devstroudphoto-512.jpg",
+        src: "/images/gallery/family-photos/shelbyjulianwedding.devstroudphoto-512.jpg",
         alt: "Shelby and Julian with their families under the willow trees",
       },
     ],
@@ -84,17 +84,17 @@ const sections: {
     title: "The Party",
     photos: [
       {
-        src: "/images/gallery/shelbyjulianwedding.devstroudphoto-544.jpg",
+        src: "/images/gallery/after-party/shelbyjulianwedding.devstroudphoto-544.jpg",
         alt: "Mamma Maria in the North End at night",
       },
       {
-        src: "/images/gallery/shelbyjulianwedding.devstroudphoto-724.jpg",
+        src: "/images/gallery/after-party/shelbyjulianwedding.devstroudphoto-724.jpg",
         alt: "Shelby and Julian posing together in the dining room at Mamma Maria",
       },
     ],
     paragraphs: [
       "The celebration continued at Mamma Maria in the North End with dinner, drinks, and dessert.",
-      "They chose Mamma Maria as a nod to Julian's Italian heritage and because it's one of their favorite restaurants in Boston. Shelby wore her late Great-Aunt Sue's 1982 wedding dress.",
+      "They chose Mamma Maria as a nod to Julian's Italian heritage and because it's one of their favorite restaurants in Boston. Shelby wore her late Great-Aunt Sue's 1986 wedding dress.",
     ],
   },
 ];

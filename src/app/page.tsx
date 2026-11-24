@@ -4,8 +4,8 @@ import { V2 } from "@/lib/flags";
 import { getPhotoDimensions } from "./_components/photoDimensions";
 
 const photo = {
-  src: "/images/gallery/shelbyjulianwedding.devstroudphoto-766.jpg",
-  alt: "Shelby's bouquet of pink flowers, held beside Julian",
+  src: "/images/gallery/portraits/shelbyjulianfilm.devstroudphoto-57.jpg",
+  alt: "Shelby and Julian sitting on a bench by the pond, seen from behind",
 };
 
 export default function Home() {
