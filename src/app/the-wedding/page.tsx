@@ -76,7 +76,7 @@ const sections: {
     ],
     paragraphs: [
       "Their immediate families flew in from Michigan, Illinois, and New Jersey to celebrate with them.",
-      "Shelby's older sister, Kyla, served as maid of honor. Julian's brothers, Andreas and Sebastian, stood beside him as co-best men.",
+      "Shelby's older sister, Kyla, served as maid of honor. Julian's brothers, Andreas and Sebastian, were his co-best men.",
     ],
   },
   {
